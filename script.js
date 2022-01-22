@@ -28,15 +28,13 @@ const checkWin = () => {
             document.querySelector(".info").innerText = boxtext[e[0]].innerText + " Won"
             isGameover = true
             document.querySelector(".imgbox").getElementsByTagName('img')[0].style.width = "200px"
-        console.log("i am gameover true")
         }
         
     })
     if(isGameover){
     containerId.addEventListener("click",()=>{
                 alert("Game is Over. Play Again !")
-                location.reload();
-                console.log("i am paresani")
+                location.reload(); // I know this is not the best way.
                         },100)}
 }
 
@@ -61,15 +59,7 @@ Array.from(boxes).forEach(element => {
 
 // Add on click listener for reset button
 function resetTheGame (){
-    // let boxtext = document.querySelectorAll('.boxtext');
-    // Array.from(boxtext).forEach(element => {
-    //     element.innerText = "";
-    //     turn = "X";
-    //     isGameover = false;
-    // document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
-    //     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
-    // })
-    location.reload();
+    location.reload(); // I know this is not the best way.
 }
 
 
